@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite configfailurepolicy="continue" name="Page Object test example">
+
+<parameter name="appURL" value="https://wrfmssw-europe-st.shell.com/App/DREAM/Home.aspx"/>
+
+<parameter name="browserType" value="chrome"/>
+<test name="sample test">
+<classes>
+<!--   <class name="com.pack.common.tests.Dream.homePageTest"/>
+<class name="com.pack.common.tests.Dream.AdvancedSearch_File_search"/>
+<class name="com.pack.common.tests.Dream.AdvancedSearch_Geographical_Search"/>
+<class name="com.pack.common.tests.Dream.AdvancedSearch_Search"/>
+<class name="com.pack.common.tests.Dream.AdvancedSearch_Search"/>
+<class name="com.pack.common.tests.Dream.FetchingReportS_SmokeSuite"/>
+<class name="com.pack.common.tests.Dream.ManagePortal_AdminEventExportTypeTest"/>
+<class name="com.pack.common.tests.Dream.ManageSED_EditEventTypesTest"/>
+<class name="com.pack.common.tests.Dream.myTools_AllTeamsTest"/>
+<class name="com.pack.common.SED.tests.EventsandReviewsTest"/>-->
+<class name="com.pack.common.tests.Dream.FetchingReportsTest_Petrophysical_CLDB_OFDB"/>
+</classes>
+
+</test>
+
+</suite>

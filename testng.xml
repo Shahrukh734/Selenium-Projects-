@@ -1,0 +1,15 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example" configfailurepolicy="continue">
+
+<parameter name="appURL" value="C:/Users/Nusrat.Pathan/Desktop/demo.html"/>
+<parameter name="browserType" value="internet"/>
+  <test name="sample test">
+<classes>
+ <class name="com.pack.common.tests_eBooks.demo"/>
+ 
+
+</classes>
+    </test>
+</suite> 
+ 

@@ -1,0 +1,73 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example" configfailurepolicy="continue">
+
+<parameter name="appURL" value="http://muntse-s-70081.europe.shell.com:8081/App/dream/home.aspx"/>
+<parameter name="browserType" value="internet"/>
+  <test name="sample test">
+<classes>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Petrophysical_Cores_Recall_Cores_Report"/>
+     <!-- <class name="com.pack.common.tests.Dream.FetchingReportsTest_Gen_TimeDepthDataRW"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_Douments_CompositeWellLogs"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_PositionLogData"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Petrophysical_Recall_Curve"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_NewDirectionalSurveyDataRS"/>
+      <class name="com.pack.common.tests.Dream.FetchingReport_Test_GeologicalData"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_WellORWellboreHeader"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_Douments_CBL_VDL"/>
+      <class name="com.pack.common.tests.Dream.SearchCollections_SharedSearches"/>
+      <class name="com.pack.common.tests.Dream.ManagePortal_ManageBasinTest"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_Biostratigraphy_Search"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Utilities_DirectionalSurveyData"/>
+      <class name="com.pack.common.tests.Dream.ManageSED_EditGroupsTest2"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_WellSummarySheet"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_Douments_WellHeadDiagrams"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_BHTWellTestReports"/>
+      <class name="com.pack.common.tests.Dream.ManagePortal_ManagePicksInterpreterTest"/>
+      <class name="com.pack.common.tests.Dream.SpecialSearches_Biostratigraphy"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_Douments_PVTReport"/>
+      <class name="com.pack.common.tests.Dream.homePageTest"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_Sample"/>
+      <class name="com.pack.common.tests.Dream.ManagePortal_AdminEventExportTypeTest"/>
+      <class name="com.pack.common.tests.Dream.ManageSED_EditOwnersTest"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_ProdInjec"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_Dates"/>
+      <class name="com.pack.common.SED.tests.FetchingReportTest_SED"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_DailyWellsReporting"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_Douments_WellStatusDiagrams"/>
+      <class name="com.pack.common.tests.Dream.managePortal_TeamManagementTest"/>
+      <class name="com.pack.common.tests.Dream.SearchCollections_MySearch"/>
+      <class name="com.pack.common.tests.Dream.managePortal_manageCountrryTest"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_WellboreStatusData"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_Saved_search"/>
+      <class name="com.pack.common.tests.Dream.SpecialSearches_LogsbyFieldDepth"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_Search"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_AllDocuments"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_GeologicalData_Picks"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_Save_SearchCriteria"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_ManageSED"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_GeologicalData_FPC_Geochemistry"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_DirectionalSurveyData1"/>
+      <class name="com.pack.common.tests.Dream.myTools_AllTeamsTest"/>
+      <class name="com.pack.common.tests.Dream.myTools_PreferencesTest"/>
+      <class name="com.pack.common.SED.tests.EventsandReviewsTest"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_Geographical_Search"/>
+      <class name="com.pack.common.tests.Dream.Customise_View"/>
+      <class name="com.pack.common.tests.Dream.ManageSED_EditEventTypesTest"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_File_search"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Utilities_TimeDepthData"/>
+      <class name="com.pack.common.tests.Dream.FetchingReport_ReserviourEngineering_AllReports"/>
+      <class name="com.pack.common.tests.Dream.ManagePortal_AdminSyncAssetTeamTest"/>   
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Petrophysical_CLDB_OFDB"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_WellBorePath"/>
+      <class name="com.pack.common.tests.Dream.fetchingReportsTest_DocumentsWithfilterReport"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_MechanicalWellData"/>
+      <class name="com.pack.common.tests.Dream.SearchCollections_QuarySearch"/>
+      <class name="com.pack.common.tests.Dream.AdvancedSearch_GulfofMexicoBlock_QuerySearch"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Petrophysical_Logs_RecallLogs"/>
+      <class name="com.pack.common.tests.Dream.SpecialSearches_FluidSampleSearch"/>
+      <class name="com.pack.common.tests.Dream.FetchingReportsTest_Petrophysical_Log_Films"/>
+      <class name="com.pack.common.tests.Dream.ManagePortal_SynchroniseWellsTest"/>
+      <class name="com.pack.common.tests.Dream.ManageSED_SEDActiveStatusListTest"/>-->
+      </classes>
+    </test>
+</suite>
